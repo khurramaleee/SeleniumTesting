@@ -9,13 +9,13 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 
-public class signupwebsitetesting {
+public class signinwebsitetesting {
 
     WebDriver driver = new ChromeDriver();
 
 
     @Test
-    public void signuptesting1(){
+    public void signinstesting1(){
         driver.navigate().to("https://sis.cuiatd.edu.pk/login.aspx");
         driver.manage().window().maximize();
         Select dropdown = new Select(driver.findElement(By.id("ddl_Session")));
