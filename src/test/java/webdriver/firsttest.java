@@ -11,8 +11,8 @@ public class firsttest {
     @Test
     public  void  startwebdrver(){
         WebDriver driver = new ChromeDriver();
-        driver.navigate().to("https://seleniumsimplified.com");
-        Assertions.assertTrue(driver.getTitle().startsWith("Selenium Simplified"),
+        driver.navigate().to("https://sis.cuiatd.edu.pk/");
+        Assertions.assertTrue(driver.getTitle().startsWith("COMSIS :: Student Login"),
                 "title should start differntly");
         driver.close();
     }
