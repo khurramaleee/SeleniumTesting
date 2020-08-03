@@ -57,7 +57,7 @@ public class signuptesting {
         ((JavascriptExecutor) driver).executeScript(js2, myElement2);
         //setting value in email field
         WebElement myElement3 = driver.findElement(By.id("email_address"));
-        String js3 = "arguments[0].setAttribute('value','"+"khurramali852@abc..com"+"')";
+        String js3 = "arguments[0].setAttribute('value','"+"khurramali852@abc.com"+"')";
         ((JavascriptExecutor) driver).executeScript(js3, myElement3);
         //setting value in password field
         WebElement myElement4 = driver.findElement(By.id("password"));
@@ -71,6 +71,7 @@ public class signuptesting {
         WebElement ele = driver.findElement(By.xpath("//button[contains(.,'Sign up')]"));
         JavascriptExecutor executor = (JavascriptExecutor)driver;
         executor.executeScript("arguments[0].click();", ele);
+        ////this test will be failed because not valid email has provided. they should verify email first.
 
     }
 }
